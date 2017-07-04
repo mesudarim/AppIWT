@@ -34,12 +34,18 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
+  primary:    #FF560A,
+  secondary:  #008080,
+  danger:     #FF560A,
   light:      #f4f4f4,
   dark:       #222
 );
+
+
+
+ion-navbar {
+  background: color($colors, secondary);
+}
 
 
 // App iOS Variables
@@ -86,3 +92,11 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+div.toolbar-background-md {    
+    background: color($colors, secondary);
+}
+
+div.toolbar-title-md{
+  color: #fff;
+}

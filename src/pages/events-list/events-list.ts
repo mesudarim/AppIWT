@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { User } from '../../models/user'
+
 /**
  * Generated class for the EventsListPage page.
  *
@@ -14,11 +16,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EventsListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public user: User) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EventsListPage');
+    console.log(this.user.email);
   }
 
 }

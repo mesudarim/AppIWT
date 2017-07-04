@@ -5,13 +5,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-//import { HomePage } from '../pages/home/home';
-import { AuthProvider } from '../providers/auth/auth';
+import { AuthProvider } from '../providers/auth';
 
 @NgModule({
   declarations: [
     MyApp,
-    //HomePage
   ],
   imports: [
     BrowserModule,
