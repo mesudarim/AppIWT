@@ -93,10 +93,14 @@ ion-navbar {
 @import "roboto";
 @import "noto-sans";
 
-div.toolbar-background-md {    
+div.toolbar-background-md {
     background: color($colors, secondary);
 }
 
 div.toolbar-title-md{
+  color: #fff;
+}
+
+button.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
   color: #fff;
 }

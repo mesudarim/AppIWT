@@ -14,5 +14,18 @@
 
 
 <ion-content padding>
+  <!-- <new-event></new-event> -->
+  <ion-list>
+    <ion-item *ngFor="let event of events">
+      <!-- <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail> -->
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+    </ion-item>
+  </ion-list>
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)="newEvent()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 
 </ion-content>
