@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
+
 /*
   Generated class for the EventsProvider provider.
 
@@ -12,18 +14,23 @@ import 'rxjs/add/operator/map';
 export class EventsProvider {
 
   data: any;
+  private _eventUrl = 'http://localhost:3000/events';
 
-  constructor(public http: Http) {
-    this.data = null;
-    console.log('Hello EventsProvider Provider');
-  }
+  constructor(private _http: Http) {}
+  //   this.data = null;
+  //   console.log('Hello EventsProvider Provider');
+  // load() {
+  //   return this._http.get(this._eventUrl);
+  // }
+  //
   load() {
       if (this.data) {
         return Promise.resolve(this.data);
       }
 
       return new Promise(resolve => {
-        this.http.get("jsonplaceholder.typicode.com/post")
+
+        this._http.get(this._eventUrl)
           .map(res => res.json())
           .subscribe(data => {
             this.data = data;

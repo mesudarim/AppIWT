@@ -1,0 +1,44 @@
+{
+    "events": [
+        {
+            "userName": "Jean",
+            "id": 1,
+            "eventName": "Marc's wedding",
+            "releaseDate": "March 19, 2016",
+            "description": "Geneve",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+        },
+        {
+            "userName": "Paul",
+            "id": 2,
+            "eventName": "Super Party",
+            "releaseDate": "March 18, 2016",
+            "description": "Los Angeles",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+        },
+        {
+            "userName": "Michelle",
+            "id": 3,
+            "eventName": "Hammer",
+            "releaseDate": "May 21, 2016",
+            "description": "Madrid",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+        },
+        {
+            "userName": "Stéphanie",
+            "id": 4,
+            "eventName": "Saw",
+            "releaseDate": "May 15, 2016",
+            "description": "NYC",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+        },
+        {
+            "userName": "Gérard",
+            "id": 5,
+            "eventName": "Video Game Controller",
+            "releaseDate": "October 15, 2015",
+            "description": "Paris",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+        }
+    ]
+}

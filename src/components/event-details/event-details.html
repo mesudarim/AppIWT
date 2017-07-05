@@ -1,0 +1,27 @@
+<!-- Generated template for the EventDetailsComponent component -->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create a new event</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>What?</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button full ion-button class="light" (click)="hereNow()">Utiliser mes données actuelles</button>
+    <ion-item>
+      <ion-label floating>Where?</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>When?</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button full ion-button bottom (click)="submit()">VALIDER</button>
+  </ion-list>
+</ion-content>
