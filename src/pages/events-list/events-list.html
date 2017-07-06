@@ -8,6 +8,11 @@
 
   <ion-navbar>
     <ion-title>{{userName}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -20,8 +25,8 @@
       <ion-thumbnail item-start>
         <img src="{{item.imageUrl}}">
       </ion-thumbnail>
-      <h2 (click)="getUserList()">{{item.userName}} was there</h2>
-      <p (click)="getEventDetails()">{{item.eventName}}</p>
+      <h2 (click)="getUserList(item)" class="link">{{item.eventOwner}} was there</h2>
+      <p (click)="getEventDetails(item)" class="link">{{item.eventName}}</p>
       <p>{{item.description}}</p>
     </ion-item>
   </ion-list>

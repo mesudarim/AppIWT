@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -22,3 +22,16 @@ export class EventDetailsPage {
   }
 
 }
+
+
+  //@Input() userName: string = "";
+
+
+//private eventList :EventsListPage
+//   constructor() {
+//     //console.log(eventList.items)
+//     console.log('Hello EventDetailsComponent Component');
+//     this.text = 'Hello World';
+//   }
+//
+// }

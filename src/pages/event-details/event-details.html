@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>event-details</ion-title>
+    <ion-title>{{eventName}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-
+  <ion-list>
+    <ion-item>
+      <h2>{{description}}</h2>
+    </ion-item>
+    <ion-item>
+      <h2>{{releaseDate}}</h2>
+    </ion-item>
+    <ion-item>
+      <h2>Nbr de participants</h2>
+    </ion-item>
+  </ion-list>
 </ion-content>

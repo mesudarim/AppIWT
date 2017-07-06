@@ -37,7 +37,7 @@ $colors: (
   primary:    #FF560A,
   secondary:  #008080,
   danger:     #FF560A,
-  light:      #f4f4f4,
+  grey:      #898989,
   dark:       #222
 );
 
@@ -108,3 +108,11 @@ button.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-defau
 ion-item.item-md {
     padding-left: 8px;
   }
+
+button.grey {
+  background-color: #898989;
+}
+
+.link{
+  cursor: pointer;
+}
