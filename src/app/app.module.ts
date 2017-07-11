@@ -8,6 +8,10 @@ import { MyApp } from './app.component';
 import { AuthProvider } from '../providers/auth';
 
 import { EventsProvider } from '../providers/events';
+import { UsersProvider } from '../providers/users';
+//import { TabsComponent } from '../components/tabs/tabs';
+//import { GaleryComponent } from '../components/galery/galery';
+//import { ChatComponent } from '../components/chat/chat';
 //import { NewEventPage } from '../pages/new-event/new-event';
 //import { EventDetailsPage } from '../pages/event-details/event-details';
 //import { UserListPage } from '../pages/user-list/user-list';
@@ -15,6 +19,9 @@ import { EventsProvider } from '../providers/events';
 @NgModule({
   declarations: [
     MyApp,
+    //TabsComponent,
+    //GaleryComponent,
+    //ChatComponent,
     //NewEventPage,
     //EventDetailsPage,
     //UserListPage,
@@ -36,7 +43,8 @@ import { EventsProvider } from '../providers/events';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
-    EventsProvider
+    EventsProvider,
+    UsersProvider
   ]
 })
 export class AppModule {}

@@ -23,6 +23,7 @@ import { EventsProvider } from '../../providers/events'
 })
 export class EventsListPage {
 
+  
   items:Array<User> = [];
   user$:Observable<User>;
 

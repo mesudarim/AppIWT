@@ -1,5 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, Input, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
+
+import { User } from '../../models/user'
+//import { TabsComponent } from '../../components/tabs/tabs'
 
 /**
  * Generated class for the EventDetailsPage page.
@@ -14,13 +17,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EventDetailsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  // @ViewChild(TabsComponent)
+  // private tab: TabsComponent;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EventDetailsPage');
-  }
+  // tab1Root: string = 'GaleryPage';
+  // tab2Root: string = 'ChatPage';
 
+  tabs: string = "galery";
+  isAndroid: boolean = false;
+
+  item: User;
+  text: string;
+
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public platform: Platform
+              ) {
+        this.item = this.navParams.get('item');
+        console.log(this.item);
+        this.isAndroid = platform.is('android');
+  }
 }
 
 

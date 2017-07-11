@@ -25,9 +25,12 @@
       <ion-thumbnail item-start>
         <img src="{{item.imageUrl}}">
       </ion-thumbnail>
-      <h2 (click)="getUserList(item)" class="link">{{item.eventOwner}} was there</h2>
+      <ion-thumbnail item-end class="ITW">
+        <img src="{{iwtURL}}">
+      </ion-thumbnail>
       <p (click)="getEventDetails(item)" class="link">{{item.eventName}}</p>
-      <p>{{item.description}}</p>
+      <p>{{item.place}}</p>
+      <h2 (click)="getUserList(item)" class="link">{{item.eventOwner}} was there</h2>
     </ion-item>
   </ion-list>
   <ion-fab right bottom>

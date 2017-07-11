@@ -6,45 +6,66 @@
             "eventName": "Marc's wedding",
             "startDate": "March 19, 2016",
             "endDate": "March 19, 2016",
-            "description": "Geneve",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+            "place": "Geneve",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png",
+            "users": []
         },
         {
             "eventOwner": "Paul",
             "id": 2,
             "eventName": "Super Party",
             "releaseDate": "March 18, 2016",
-            "description": "Los Angeles",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+            "place": "Los Angeles",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
+            "users": []
         },
         {
             "eventOwner": "Michelle",
             "id": 3,
             "eventName": "Hammer",
             "releaseDate": "May 21, 2016",
-            "description": "Madrid",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+            "place": "Madrid",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png",
+            "users": []
         },
         {
             "eventOwner": "Stéphanie",
             "id": 4,
             "eventName": "Saw",
             "releaseDate": "May 15, 2016",
-            "description": "NYC",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+            "place": "NYC",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
+            "users": []
         },
         {
             "eventOwner": "Gérard",
             "id": 5,
             "eventName": "Video Game Controller",
             "releaseDate": "October 15, 2015",
-            "description": "Paris",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+            "place": "Paris",
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png",
+            "users": []
         }
     ],
-
-
-    "users":[
-
+    "users": [
+        {
+            "id": 1,
+            "email": "Stéphanie@gmail.com",
+            "userName": "Steph",
+            "userPic": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
+            "myEvents": [],
+            "myFriends": [],
+            "myNotifications": []
+        },
+        {
+            "id": 1,
+            "email": "Stéphanie@gmail.com",
+            "userName": "Steph",
+            "userPic": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
+            "myEvents": [],
+            "myFriends": [],
+            "myNotifications": []
+        }
     ]
+
 }

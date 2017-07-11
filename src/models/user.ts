@@ -1,8 +1,12 @@
 export class User {
+  public id: number = null;
   public email: string = "";
   public userName : string = "";
+  public userPic: string = "";
   public myEvents = [];
-  public id: number = null;
+  public myFriends = [];
+  public myNotifications = [];
+
   //////  A VIRER, JUSTE POUR VOIS SI CELA MARCHE
   public eventOwner: string = "";
 

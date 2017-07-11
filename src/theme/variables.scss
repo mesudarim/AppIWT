@@ -77,16 +77,12 @@ ion-navbar {
 // default are overridden.
 
 @import "ionic.theme.default";
-
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
 
 @import "ionic.ionicons";
-
-
 // Fonts
 // --------------------------------------------------
 
@@ -115,4 +111,48 @@ button.grey {
 
 .link{
   cursor: pointer;
+}
+
+ion-label.label.label-md  {
+  margin: 0px 8px 0px 0px;
+}
+
+.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+  width: 60px !important;
+  height: 60px !important;
+}
+
+ion-app.md [padding], ion-app.md [padding] .scroll-content {
+    padding: 8px !important;
+}
+
+ion-thumbnail.item-md ion-thumbnail[item-start]{
+  border-bottom: 1px solid #dedede;
+}
+
+ion-item.item-md{
+  border-bottom: 1px solid #dedede;
+}
+
+div .list-md .item-block .item-inner{
+  border-bottom: 0px solid #dedede;
+}
+
+ion-segment-button.toolbar .segment-md .segment-button.activated, .toolbar .segment-md .segment-button.segment-activated{
+  border-color: #0d0d0d;
+  color: black;
+}
+
+div.toolbar-md .toolbar-background-md {
+      background: #fff;
+}
+
+div.tabs.toolbar-md{
+  color:black !important;
+  background: #fff !important;
+}
+
+#autocomplete{
+  border: none;
+  width: 90vw;
 }

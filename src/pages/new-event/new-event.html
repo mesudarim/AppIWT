@@ -20,22 +20,23 @@
     </ion-item>
     <button full ion-button class="grey" (click)="hereNow()">Utiliser mes données actuelles</button>
     <ion-item>
-      <ion-label floating>Where?</ion-label>
-      <ion-input type="text"></ion-input>
+      <input id="autocomplete" placeholder="Enter your address" type="text">
     </ion-item>
     <ion-item>
       <ion-label floating>When?</ion-label>
-      <ion-datetime displayFormat="DD/MMM/YY" pickerFormat="DD MMM YY"></ion-datetime>
+      <ion-datetime displayFormat="DD/MMM/YY" pickerFormat="DD MMM YY" [(ngModel)]="when"></ion-datetime>
     </ion-item>
+
     <ion-item>
       <ion-label>Private</ion-label>
       <ion-toggle checked="false" [(ngModel)]="private"></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-label>Add picture</ion-label>
-      <ion-toggle checked="false" [(ngModel)]="private"></ion-toggle>
+
     </ion-item>
 
     <button full ion-button bottom (click)="submit()" class="bottom">VALIDER</button>
   </ion-list>
+
 </ion-content>
