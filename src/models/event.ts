@@ -7,6 +7,8 @@ export class Event {
   public place: string = "";
   public imageUrl: string = "";
   public users = [];
+  public chat = [];
+  public galery = [];
 
 
 

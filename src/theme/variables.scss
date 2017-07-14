@@ -103,6 +103,7 @@ button.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-defau
 
 ion-item.item-md {
     padding-left: 8px;
+    //height: 4em;
   }
 
 button.grey {
@@ -117,7 +118,7 @@ ion-label.label.label-md  {
   margin: 0px 8px 0px 0px;
 }
 
-.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+ion-thumbnail {
   width: 60px !important;
   height: 60px !important;
 }
@@ -154,5 +155,14 @@ div.tabs.toolbar-md{
 
 #autocomplete{
   border: none;
-  width: 90vw;
+  width: 75vw;
+}
+
+ion-item ion-icon{
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+ion-icon.icon-md-primary {
+    color: #898989;
 }

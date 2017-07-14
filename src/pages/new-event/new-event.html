@@ -20,7 +20,10 @@
     </ion-item>
     <button full ion-button class="grey" (click)="hereNow()">Utiliser mes données actuelles</button>
     <ion-item>
-      <input id="autocomplete" placeholder="Enter your address" type="text">
+      <input id="autocomplete" placeholder="Where?" type="text">
+      <ion-icon ios="ios-pin-outline" md="md-pin" color="primary" (click)="openMap()"></ion-icon>
+      <!-- <ion-icon ios="ios-locate" md="md-locate" end></ion-icon> -->
+      <!-- <ion-ios-location end></ion-ios-location> -->
     </ion-item>
     <ion-item>
       <ion-label floating>When?</ion-label>

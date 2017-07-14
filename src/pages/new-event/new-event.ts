@@ -55,6 +55,9 @@ hereNow(){
   console.log(this.currDate)
 }
 
+openMap(){
+  console.log("openMap")
+}
 // export class NewEventComponent {
 //
 //   text: string;
