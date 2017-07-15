@@ -112,15 +112,16 @@ button.grey {
 
 .link{
   cursor: pointer;
+  font-weight: bold;
 }
 
 ion-label.label.label-md  {
   margin: 0px 8px 0px 0px;
 }
 
-ion-thumbnail {
-  width: 60px !important;
-  height: 60px !important;
+ion-thumbnail.thumbnailEventList {
+  width: 60px;
+  height: 60px;
 }
 
 ion-app.md [padding], ion-app.md [padding] .scroll-content {
@@ -165,4 +166,43 @@ ion-item ion-icon{
 
 ion-icon.icon-md-primary {
     color: #898989;
+}
+
+.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.item-md ion-thumbnail.thumbnailEventList, .item-md ion-thumbnail.IWT{
+  min-width: 60px;
+  min-height: 60px;
+}
+
+ion-list ion-item ion-thumbnail.iwt.thumbnailEventList{
+  margin: 8px 0px 8px 8px;
+  cursor: pointer;
+}
+
+#logo {
+  width: 100px;
+  margin-left: 36%;
+  position: relative;
+}
+
+#logoWhite {
+  width: 80px;
+  position: relative;
+}
+
+.avatar div.item-inner{
+  border-bottom: none;
+}
+
+ion-item.avatar.item.item.item-block.item-md{
+  border-bottom: none;
+  background: rgba(0,0,0,0)
+}
+
+.item-md.item-block .item-inner{
+  border-bottom: none !important;
 }

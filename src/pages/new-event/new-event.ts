@@ -22,10 +22,7 @@ export class NewEventPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log(this.when, this.where)
 
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
     var a,lat,long;
-    //var markerimg = 'https://i.imgur.com/Qwv4lBZ.png';
 
     function initialize() {
         var searchBox: any = document.getElementById('autocomplete');
@@ -56,8 +53,11 @@ hereNow(){
 }
 
 openMap(){
-  console.log("openMap")
+  this.navCtrl.push('MapPage', {
+      //item: item
+  });
 }
+
 // export class NewEventComponent {
 //
 //   text: string;

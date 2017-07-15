@@ -2,9 +2,9 @@ export class Event {
   public id: number = null;
   public eventOwner: string = "";
   public eventName: string = "";
-  public startDate : any = "";
-  public endDate : any = "";
-  public place: string = "";
+  public startDate : Date;
+  public endDate : Date;
+  public place: any = {};
   public imageUrl: string = "";
   public users = [];
   public chat = [];
@@ -18,6 +18,6 @@ export class Event {
     this.startDate = startDate;
     this.endDate = endDate;
     this.eventOwner = eventOwner;
-    this.place = place
+    this.place = place;
   }
 }

@@ -62,6 +62,11 @@ login() {
     //     err => this.handleError(err));
   }
 
+  createNew(){
+    this.navCtrl.push('SignupPage', {
+    });
+  }
+
   // ionViewDidLoad() {
   //
   //   console.log('ionViewDidLoad LoginPage');
