@@ -15,9 +15,9 @@ import {} from '@types/googlemaps';
 })
 export class NewEventPage {
 
-  currDate: Date;
-  when:Date;
-  where: string;
+  currDate : string;
+  when : string;
+  where = {};
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log(this.when, this.where)
@@ -48,8 +48,11 @@ ionViewDidLoad() {
 }
 
 hereNow(){
-  this.currDate = new Date();
+  //Pour avoir la date au format ISO on utilise the toISOString()
+  this.currDate = new Date().toISOString();
+  this.when = this.currDate;
   console.log(this.currDate)
+  console.log(this.when)
 }
 
 openMap(){

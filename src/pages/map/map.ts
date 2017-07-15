@@ -15,7 +15,7 @@ import {} from '@types/googlemaps';
 })
 export class MapPage {
 
-  @Input() mapID: string = "";
+  //@Input() mapID: string = "";
   private map: google.maps.Map;
 
 
