@@ -13,15 +13,16 @@
 </ion-header>
 
 <ion-content padding>
+
   <ion-list>
     <ion-item>
       <ion-label floating>Event name</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="what"></ion-input>
     </ion-item>
-    <button full ion-button class="grey" (click)="hereNow()">Utiliser mes données actuelles</button>
+    <button full ion-button class="grey" (click)="hereNow()">USE MY CURRENT LOCATION</button>
     <ion-item>
-      <input id="autocomplete" placeholder="Where?" type="text">
-      <ion-icon ios="ios-pin-outline" md="md-pin" color="primary" (click)="openMap()"></ion-icon>
+      <input id="autocomplete" placeholder="Where?" type="text" [(ngModel)]="where" >
+      <ion-icon ios="ios-pin-outline" md="md-pin" color="primary" (click)="openMap()" item-end></ion-icon>
       <!-- <ion-icon ios="ios-locate" md="md-locate" end></ion-icon> -->
       <!-- <ion-ios-location end></ion-ios-location> -->
     </ion-item>
@@ -29,17 +30,19 @@
       <ion-label floating>When?</ion-label>
       <ion-datetime displayFormat="DD/MMM/YY - HH:mm" pickerFormat="DD MMM YY HH:mm" min="1945" [(ngModel)]="when"></ion-datetime>
     </ion-item>
-
-    <ion-item>
+    <!-- Cela sera pour le privé ou public -->
+    <!-- <ion-item>
       <ion-label>Private</ion-label>
       <ion-toggle checked="false" [(ngModel)]="private"></ion-toggle>
-    </ion-item>
+    </ion-item> -->
     <ion-item>
       <ion-label>Add picture</ion-label>
+      <ion-icon ios="ios-attach" md="md-attach" item-end></ion-icon>
 
     </ion-item>
 
     <button full ion-button bottom (click)="submit()" class="bottom">VALIDER</button>
   </ion-list>
+  <!-- {{lat | json}} -->
 
 </ion-content>

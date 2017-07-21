@@ -10,10 +10,12 @@ import { AuthProvider } from '../providers/auth';
 import { EventsProvider } from '../providers/events';
 import { UsersProvider } from '../providers/users';
 import { Camera } from '@ionic-native/camera';
+//import { MapComponent } from '../components/map/map';
 
 @NgModule({
   declarations: [
     MyApp,
+    //MapComponent,
   ],
   imports: [
     BrowserModule,

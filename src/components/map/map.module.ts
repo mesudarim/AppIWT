@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
-import { TabsComponent } from './tabs';
+import { MapComponent } from './map';
 
 @NgModule({
   declarations: [
-    TabsComponent,
+    MapComponent,
   ],
   imports: [
     IonicModule,
   ],
   exports: [
-    TabsComponent
+    MapComponent
   ]
 })
-export class TabsComponentModule {}
+export class MapComponentModule {}

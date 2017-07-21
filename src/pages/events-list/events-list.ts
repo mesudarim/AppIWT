@@ -23,7 +23,7 @@ import { EventsProvider } from '../../providers/events'
 })
 export class EventsListPage {
 
-  
+
   items:Array<User> = [];
   user$:Observable<User>;
 
@@ -35,12 +35,8 @@ export class EventsListPage {
             ) {
     this.events.load().then((data)=>{
       this.items = data;
-
   });
 }
-  // ionViewDidLoad() {
-  //   console.log(this.user$);
-  // }
 
   newEvent(){
       // push another page onto the navigation stack
