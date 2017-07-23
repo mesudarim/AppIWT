@@ -1,71 +1,238 @@
 {
-    "events": [
+  "events": [
+    {
+      "eventOwner": "Jean",
+      "id": 1,
+      "eventName": "Marc's wedding",
+      "when": "March 19, 2016",
+      "duration": "March 19, 2016",
+      "where": "Geneve",
+      "imageUrl": "https://pixabay.com/en/knight-fencing-armor-leaf-2490205/",
+      "users": [],
+      "galery": []
+    },
+    {
+      "eventOwner": "Paul",
+      "id": 2,
+      "eventName": "Super Party",
+      "releaseDate": "March 18, 2016",
+      "where": "Los Angeles",
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
+      "users": []
+    },
+    {
+      "eventOwner": "Michelle",
+      "id": 3,
+      "eventName": "Hammer",
+      "releaseDate": "May 21, 2016",
+      "where": "Madrid",
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png",
+      "users": []
+    },
+    {
+      "eventOwner": "Stéphanie",
+      "id": 4,
+      "eventName": "Saw",
+      "releaseDate": "May 15, 2016",
+      "where": "NYC",
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
+      "users": []
+    },
+    {
+      "eventOwner": "Gérard",
+      "id": 5,
+      "eventName": "Video Game Controller",
+      "releaseDate": "October 15, 2015",
+      "where": "Paris",
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png",
+      "users": []
+    },
+    {
+      "eventOwner": "rafa",
+      "id": 6,
+      "eventName": "Video Game Controller",
+      "releaseDate": "October 15, 2015",
+      "where": "Paris",
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png",
+      "users": []
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "Stéphanie@gmail.com",
+      "userName": "Steph",
+      "userPic": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
+      "myEvents": [],
+      "myFriends": [],
+      "myNotifications": [
         {
-            "eventOwner": "Jean",
-            "id": 1,
-            "eventName": "Marc's wedding",
-            "startDate": "March 19, 2016",
-            "endDate": "March 19, 2016",
-            "place": "Geneve",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png",
-            "users": []
+          "id": 1,
+          "userName": "Jean",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
         },
         {
-            "eventOwner": "Paul",
-            "id": 2,
-            "eventName": "Super Party",
-            "releaseDate": "March 18, 2016",
-            "place": "Los Angeles",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png",
-            "users": []
+          "id": 2,
+          "userName": "asdf",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
         },
         {
-            "eventOwner": "Michelle",
-            "id": 3,
-            "eventName": "Hammer",
-            "releaseDate": "May 21, 2016",
-            "place": "Madrid",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png",
-            "users": []
+          "id": 3,
+          "userName": "where",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
         },
         {
-            "eventOwner": "Stéphanie",
-            "id": 4,
-            "eventName": "Saw",
-            "releaseDate": "May 15, 2016",
-            "place": "NYC",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
-            "users": []
+          "id": 4,
+          "userName": "where",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
         },
         {
-            "eventOwner": "Gérard",
-            "id": 5,
-            "eventName": "Video Game Controller",
-            "releaseDate": "October 15, 2015",
-            "place": "Paris",
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png",
-            "users": []
+          "id": 5,
+          "userName": "where",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+        },
+        {
+          "id": 6,
+          "userName": "where",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+        },
+        {
+          "id": 7,
+          "userName": "where",
+          "where": "Geneva",
+          "eventName": "Marc's wedding",
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
         }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "email": "Stéphanie@gmail.com",
-            "userName": "Steph",
-            "userPic": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
-            "myEvents": [],
-            "myFriends": [],
-            "myNotifications": []
-        },
-        {
-            "id": 1,
-            "email": "Stéphanie@gmail.com",
-            "userName": "Steph",
-            "userPic": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
-            "myEvents": [],
-            "myFriends": [],
-            "myNotifications": []
-        }
-    ]
-
+      ]
+    },
+    {
+      "id": 2,
+      "email": "jaques@gmail.com",
+      "userName": "Steph",
+      "userPic": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png",
+      "myEvents": [],
+      "myFriends": [],
+      "myNotifications": []
+    }
+  ]
 }

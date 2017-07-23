@@ -4,9 +4,10 @@ import {} from '@types/googlemaps';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Platform } from 'ionic-angular';
 import { MapPage } from '../map/map'
-import { Camera } from '@ionic-native/camera';
-//import { BehaviorSubject, Observable } from 'rxjs';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
+import { EventsProvider } from '../../providers/events'
+//import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 /**
  * Generated class for the NewEventPage page.
@@ -22,28 +23,31 @@ import { Camera } from '@ionic-native/camera';
 export class NewEventPage {
 
   currDate : string = new Date().toISOString();;
-  // private $where = new BehaviorSubject<string>("");
-  // where: Observable<string> = this.$where.asObservable();
   where: string;
   when : string = this.currDate;
   lat: number;
   lon: number;
-  test: number;
-  what: string;
+  eventName: string;
   map: MapPage;
+  duration: string;
+  //newEvent: Event;
+  // eventForm: FormGroup;
+  //newEvent: Object = {};
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private platform: Platform,
               private geolocation: Geolocation,
               private camera: Camera,
-              public zone: NgZone
+              public zone: NgZone,
+              private events: EventsProvider
+              // private formBuilder: FormBuilder
   ) {
-    this.platform.ready().then(() => {
-      console.log('here', this)
-      // this.initialize();
-
-    });
+    // this.platform.ready().then(() => {
+    //   console.log('here', this)
+    //   // this.initialize();
+    //
+    // });
     window['initMap'] = ()=> {
       this.initialize()
     }
@@ -56,11 +60,15 @@ export class NewEventPage {
     document.body.appendChild(script)
 
 
-    console.log("before the end of the constructor " + this.lat, this.lon)
-
-    console.log("at the end of the constructor " + this.lat, this.lon)
-//
-
+    // this.newEvent = formBuilder.group({
+    //   'id': '',
+    //   'eventOwner': ['', [Validators.minLength(3)]],
+    //   'eventName': '',
+    //   'when': '',
+    //   'duration': '',
+    //   'where': '',
+    //   'imageUrl': ''
+    // })
 }
 
   initialize(){
@@ -77,12 +85,6 @@ export class NewEventPage {
          this.lat = place.geometry.location.lat();
          this.lon = place.geometry.location.lng();
        })
-
-
-      // this.lat = lat;
-      // this.lon = long;
-      //this.$where.next(a);
-      //document.getElementById("info").style.backgroundImage = "url(https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+long+"&zoom=15&scale=1&size=700x420&maptype=roadmap&format=png&visual_refresh=true&markers=icon:"+markerimg+"%7Cshadow:true%7C"+lat+','+long+")";
     });
     // google.maps.event.addDomListener(window, 'load', this.initialize);
   }
@@ -104,6 +106,7 @@ export class NewEventPage {
             //this.$where.next(results[0].formatted_address);
             this.zone.run(() => {
               this.where = results[0].formatted_address
+              console.log("herenow this.were " + this.where )
             })
           });
         });
@@ -121,7 +124,26 @@ export class NewEventPage {
   }
 
   submit(){
-    console.log("in submit " + this.lat, this.lon)
+    let when = this.when;
+    let where = this.where;
+    let eventName = this.eventName;
+    let duration = this.duration
+
+    let newEvent = {
+      when,
+      where,
+      eventName,
+      duration
+    }
+
+    console.log(newEvent)
+
+    // if (this.eventForm.valid) {
+    //   console.log("submit" + this.eventForm.value)
+    //     //this.events.createNewEvent(this.event)
+    //   }
+    this.events.createNewEvent(newEvent)
+    //this.events.createNewEvent()
   }
 
   openMap(){
@@ -130,4 +152,28 @@ export class NewEventPage {
         long : this.lon
     });
   }
+
+  /////////////////////////
+  //// Camera///////
+  ////////////////////////
+
+  getToCam(){
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    }
+
+    this.camera.getPicture(options).then((imageData) => {
+     // imageData is either a base64 encoded string or a file URI
+     // If it's base64:
+     let base64Image = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+     // Handle error
+    });
+  }
+
+
+
 }

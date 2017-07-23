@@ -28,7 +28,6 @@
 
 
 <ion-content padding>
-  <!-- <new-event></new-event> -->
   <ion-list>
     <ion-item *ngFor="let item of items">
       <ion-thumbnail item-start class="thumbnailEventList">
@@ -38,7 +37,7 @@
         <img src="../assets/img/iwt2.png">
       </ion-thumbnail>
       <p (click)="getEventDetails(item)" class="link">{{item.eventName}}</p>
-      <p>{{item.place}}</p>
+      <p>{{item.where}}</p>
       <p (click)="getUserList(item)"><span class="link">{{item.eventOwner}}</span> was there</p>
     </ion-item>
   </ion-list>

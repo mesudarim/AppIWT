@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 export class UsersProvider {
 
   data: any;
-  private _eventUrl = 'http://localhost:3000/users';
+  private _usersUrl = 'http://localhost:3000/users';
 
   constructor(private _http: Http) {}
   //   this.data = null;
@@ -28,7 +28,7 @@ export class UsersProvider {
 
       return new Promise(resolve => {
 
-        this._http.get(this._eventUrl)
+        this._http.get(this._usersUrl)
           .map(res => res.json())
           .subscribe(data => {
             this.data = data;

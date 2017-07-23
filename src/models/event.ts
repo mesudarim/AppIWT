@@ -2,22 +2,22 @@ export class Event {
   public id: number = null;
   public eventOwner: string = "";
   public eventName: string = "";
-  public startDate : Date;
-  public endDate : Date;
-  public place: any = {};
+  public when : string;
+  public duration : string;
+  public where: string;
   public imageUrl: string = "";
   public users = [];
-  public chat = [];
+  //public chat = [];
   public galery = [];
 
 
 
-  constructor(id, eventName, startDate, endDate, eventOwner, place) {
+  constructor(id, eventName, when, duration, eventOwner, where) {
     this.id = id;
     this.eventName = eventName;
-    this.startDate = startDate;
-    this.endDate = endDate;
+    this.when = when;
+    this.duration = duration;
     this.eventOwner = eventOwner;
-    this.place = place;
+    this.where = where;
   }
 }

@@ -4,11 +4,7 @@ import { Observable } from "rxjs";
 
 import { User } from '../../models/user'
 
-//import { NewEventPage } from '../new-event/new-event';
-//import { UserListPage } from '../user-list/user-list';
-//import { EventDetailsPage } from '../event-details/event-details';
-
-import { EventsProvider } from '../../providers/events'
+import { EventsProvider, IEvent } from '../../providers/events'
 
 /**
  * Generated class for the EventsListPage page.
@@ -24,18 +20,18 @@ import { EventsProvider } from '../../providers/events'
 export class EventsListPage {
 
 
-  items:Array<User> = [];
-  user$:Observable<User>;
+  // items:Array<User> = [];
+  // user$:Observable<User>;
+  public events: Observable<IEvent[]>;
 
   //rootPage:string = 'EventsListPage';
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              private events: EventsProvider
+              private eventsProvider: EventsProvider
             ) {
-    this.events.load().then((data)=>{
-      this.items = data;
-  });
+    this.events=this.eventsProvider.events$;
+    this.eventsProvider.loadAll()
 }
 
   newEvent(){
